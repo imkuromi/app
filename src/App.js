@@ -1,6 +1,8 @@
 import React from "react";
-import Calendar from "./class-component";
+import { Calendar, Button } from "./class-component";
 import { Header, Content, Footer } from "./func-components";
+import { Calculator2 } from "./calculator";
+import { Eventdata2 } from "./event-data";
 import "./style.css";
 function App() {
   const divStyle = {
@@ -17,8 +19,14 @@ function App() {
       <p>
         <center>
           <Calendar />
+          <br/>
+          <Button/>
+          <Calculator2/>
+          <br/>
+          <Eventdata2/>
         </center>
       </p>
+      
       <Content/>
       <Footer/>
     </>
