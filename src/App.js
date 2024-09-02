@@ -7,7 +7,12 @@ import RefsFunc from "./refs-func";
 import Cart from "./sate-class";
 import  Massagebox  from "./sate-func";
 import "./style.css";
+import {userContext} from './context';
+import Header2 from './context-header2';
+import Content2  from "./context-content2";
+
 function App() {
+  let[user,setUser] = React.useState('');
   const divStyle = {
     color: "red",
     backgroundColor: "powderblue",
@@ -15,6 +20,10 @@ function App() {
   };
   return (
     <>
+    <userContext.Provider value={[user,setUser]}>
+      <Header2/>
+      <Content2/>
+    </userContext.Provider>
       <Header />
       <div style={divStyle}>Hello React</div>
       <h2>DeveloperThai.com</h2>
