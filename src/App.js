@@ -1,34 +1,36 @@
 import React from "react";
-import { Calendar, Button } from "./class-component";
-import { Header, Content, Footer } from "./func-components";
-import { Calculator2 } from "./calculator";
-import { Eventdata2 } from "./event-data";
-import RefsFunc from "./refs-func";
-import Cart from "./sate-class";
-import  Massagebox  from "./sate-func";
-import "./style.css";
-import {userContext} from './context';
-import Header2 from './context-header2';
-import Content2  from "./context-content2";
-import Router2 from "./router2";
-import Router3 from "./router3";
-import Router4 from "./router4";
+// import { Calendar, Button } from "./class-component";
+// import { Header, Content, Footer } from "./func-components";
+// import { Calculator2 } from "./calculator";
+// import { Eventdata2 } from "./event-data";
+// import RefsFunc from "./refs-func";
+// import Cart from "./sate-class";
+// import  Massagebox  from "./sate-func";
+// import "./style.css";
+// import {userContext} from './context';
+// import Header2 from './context-header2';
+// import Content2  from "./context-content2";
+// import Router2 from "./router2";
+// import Router3 from "./router3";
+// import Router4 from "./router4";
+import FromSelectFile from "./form-select.file";
 
 function App() {
-  let[user,setUser] = React.useState('');
-  const divStyle = {
-    color: "red",
-    backgroundColor: "powderblue",
-    fontSize: "larger",
-  };
+  // let[user,setUser] = React.useState('');
+  // const divStyle = {
+  //   color: "red",
+  //   backgroundColor: "powderblue",
+  //   fontSize: "larger",
+  // };
   return (
     <>
-    <Router2/>
+    {/* <Router2/>
     <br/>
     <Router3/>
     <br/>
     <Router4/>
-    <br/>
+    <br/> */}
+    <FromSelectFile/>
     {/* <userContext.Provider value={[user,setUser]}>
       <Header2/>
       <Content2/>
